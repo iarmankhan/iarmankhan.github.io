@@ -48,14 +48,19 @@ export const TopBar = styled.div`
     z-index: 30;
     width: 100%;
     
-    @media only screen and (max-width: 1239px){
+    @media only screen and (max-width: 1239px) {
+        position: static;
+        width: 100%;
+    }
+    
+    @media only screen and (max-width: 767px) {
         background-color: #03034a !important;
     }
 `;
 
 export const TopBarLeft = styled.div`
     margin-top: 0;
-    overflow: hidden;
+    overflow: visible;
     float: none;
     width: 100%;
     position:relative;
@@ -73,10 +78,12 @@ export const LogoWrapper = styled.div`
     width: 100%;
     text-align:center;
     margin: 0;
+    background-color: #03034a;
     
     @media only screen and (min-width: 1240px){
         float: none;
         margin: 15px 0;
+        background-color: transparent;
     } 
 `;
 
@@ -106,6 +113,7 @@ export const MenuWrapper = styled.div`
     float: left;
     width: 100%;
     margin: 0;
+    background-color: #03034a;  
     
     @media only screen and (min-width: 1240px){
         float: none;
@@ -116,17 +124,27 @@ export const MenuWrapper = styled.div`
 
 export const Menu = styled.nav`
     z-index: 201;
-    ${({isOpen}) => isOpen ? 'display: block' : 'display: none'};
-    position: relative;
+    transition: all 0.5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    ${({isOpen}) => 
+        isOpen ? 
+            `visibility: visible;
+            opacity: 1` :
+            `visibility: hidden;
+            opacity: 0`
+    };
+    position: absolute;
     width: 100%;
     height: auto;
     bottom: auto;
-    top: 100%;
-    right: 1%;
+    top: 70px;
+    background-color: #03034a;  
     
     @media only screen and (min-width: 1240px){
         background-color: transparent;
         display: block;
+        visibility: visible;
+        opacity: 1;
+        position: static;
     }
 `;
 
