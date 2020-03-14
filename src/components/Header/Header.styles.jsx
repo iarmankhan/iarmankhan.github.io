@@ -82,7 +82,7 @@ export const LogoWrapper = styled.div`
     
     @media only screen and (min-width: 1240px){
         float: none;
-        margin: 15px 0;
+        margin: 15px 0 40px;
         background-color: transparent;
     } 
 `;
@@ -93,7 +93,7 @@ export const LogoContainer = styled(Link)`
     margin: 10px 50px;
     
     @media only screen and (min-width: 1240px){
-        padding: 40px 30px;
+        //padding: 40px 30px;
     }
 `;
 
@@ -138,9 +138,11 @@ export const Menu = styled.nav`
     bottom: auto;
     top: 70px;
     background-color: #03034a;  
+    padding-bottom: 10px;
     
     @media only screen and (min-width: 1240px){
         background-color: transparent;
+        padding-bottom: 0;
         display: block;
         visibility: visible;
         opacity: 1;
