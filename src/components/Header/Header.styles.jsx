@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 export const HeaderContainer = styled.header`
     background-color: #03034a;
-    position: static;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
