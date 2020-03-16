@@ -9,7 +9,7 @@ const PortfolioItem = ({title, description, image, url}) => {
             <div className="hover-wrapper">
                 <div className="hover-desc">
                     <div className="desc-inner">
-                        <H3 className='title'><a href={url}>{title}</a></H3>
+                        <H3 className='title'><Link to={url}>{title}</Link></H3>
                         <div className="desc">{description}</div>
                     </div>
                     <div className="links">
@@ -24,9 +24,9 @@ const PortfolioItem = ({title, description, image, url}) => {
                     </div>
                 </div>
                 <div className="image-wrapper">
-                    <a href={url} className="link">
+                    <Link to={url} className="link">
                         <img height="700" width="700" src={image} alt={title}/>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </PortfolioItemContainer>

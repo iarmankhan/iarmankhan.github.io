@@ -82,7 +82,7 @@ export const LogoWrapper = styled.div`
     
     @media only screen and (min-width: 1240px){
         float: none;
-        margin: 15px 0 40px;
+        margin: 40px 0;
         background-color: transparent;
     } 
 `;

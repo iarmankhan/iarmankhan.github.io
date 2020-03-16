@@ -7,6 +7,7 @@ import Header from "./components/Header/Header.component";
 import Home from "./pages/Home/Home.page";
 import {ContentWrapper, MainContent, SectionsGroup} from "./App.styles";
 import Work from "./pages/Work/Work.page";
+import Footer from "./components/Footer/Footer.component";
 
 class App extends Component {
     render() {
@@ -20,6 +21,7 @@ class App extends Component {
                                 <Route exact path='/' component={Home}/>
                                 <Route exact path='/work' component={Work}/>
                             </Switch>
+                            <Footer/>
                         </SectionsGroup>
                     </ContentWrapper>
                 </MainContent>
