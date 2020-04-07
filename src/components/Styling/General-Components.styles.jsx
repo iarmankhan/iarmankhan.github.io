@@ -28,6 +28,10 @@ export const Hr = styled.hr`
     border: none;
     margin: 0 auto 35px;
     clear: both;
+    
+    @media screen and (max-width: 768px){
+        margin-bottom: 20px;
+    }
 `;
 
 export const SeparatorContainer = styled.div`

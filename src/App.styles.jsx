@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const MainContent = styled.div`
-    margin-left: 250px;
-    padding: 0;
+    margin-left: 0;
     
-    @media only screen and (max-width: 767px) {
-        margin-left: 0;
+    @media only screen and (min-width: 1240px) {
+        margin-left: 250px;
+        padding: 0;
     }
 `;
 
