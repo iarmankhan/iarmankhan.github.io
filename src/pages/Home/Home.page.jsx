@@ -8,7 +8,6 @@ import {
 } from "../../components/Styling/General-Components.styles";
 import {Separator} from "../../components/Styling/General-Components.component";
 import Portfolio from "../../components/Portfolio/Portfolio.component";
-import ScrollToTop from "../../components/Styling/ScrollToTop.component";
 import {useHistory} from "react-router-dom";
 
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
 
     return (
         <div>
-            <ScrollToTop/>
             <SectionContainer withPadding pt={160} pb={40}>
                 <SectionWrapper>
                     <ColumnWrapper>

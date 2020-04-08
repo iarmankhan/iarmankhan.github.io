@@ -2,29 +2,34 @@ import React from "react";
 import {
     CustomButton,
     H1, H2,
-    H3, H4, H5, Hr,
+    H4, H5, Hr,
     SectionContainer,
-    SectionWrapper
+    SectionWrapper, LeftBlock, RightBlock
 } from "../../components/Styling/General-Components.styles";
 
-import bio from '../../assets/images/bio.png'
+import bio from '../../assets/images/bio.jpg'
+// import overlay from '../../assets/images/overlay.png'
 import miniSeparator from '../../assets/images/separator-mini.png'
-import {BioWrapper, LeftBlock, RightBlock} from "./Bio.styles";
+import {BioImageOverlay, BioImageWrapper, BioWrapper} from "./Bio.styles";
 
 const Bio = () => {
     return (
         <div>
-            <SectionContainer withPadding pt={160} pb={80}>
+            <SectionContainer withPadding pt={160} pb={40}>
                 <SectionWrapper>
                     <BioWrapper align='center'>
-                        <LeftBlock width={50}>
-                            <img className='bio' src={bio} alt="Bio"/>
+                        <LeftBlock width={50} style={{display: 'flex', justifyContent: 'center'}}>
+                            <BioImageWrapper>
+                                <BioImageOverlay />
+                                <img className='bio' src={bio} alt="Bio"/>
+                                {/*<img className='overlay' src={overlay} alt="Bio"/>*/}
+                            </BioImageWrapper>
                         </LeftBlock>
-                        <RightBlock width={50}>
+                        <RightBlock>
                             <H1>I'm Arman</H1>
                             <Hr/>
                             <div className="image">
-                                <img src={miniSeparator}/>
+                                <img src={miniSeparator} alt="Person"/>
                             </div>
                             <Hr/>
                             <H4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -44,7 +49,7 @@ const Bio = () => {
                                 <img src={miniSeparator}/>
                             </div>
                         </LeftBlock>
-                        <RightBlock width={70} pt={0}>
+                        <RightBlock width={70} pt={0} pl={5}>
                             <H4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore ma.</H4>
                             <Hr/>

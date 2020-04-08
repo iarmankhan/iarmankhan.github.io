@@ -48,11 +48,6 @@ export const SeparatorContainer = styled.div`
     }
 `;
 
-export const BackToTop = styled.a`
-
-`;
-
-
 export const H1 = styled.h1`
     font-size: 70px;
     line-height: 70px;
@@ -107,7 +102,7 @@ export const H5 = styled.h5`
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     
     @media only screen and (max-width: 479px){
         font-size: 13px;
@@ -173,5 +168,24 @@ export const ColumnWrapper = styled.div`
             max-width: 98%;
             padding-right: 10%;
         }
+    }
+`;
+
+export const LeftBlock = styled.div`
+    width: ${({width}) => `${width ? width : 50}%`};
+    
+    @media screen and (max-width: 768px){
+        width: 90%;
+    }
+`;
+
+export const RightBlock = styled.div`
+    width: ${({width}) => `${width ? width : 50}%`};
+    padding: ${({pt}) => `${pt ? pt : 0}%`} 0 0 ${({pl}) => `${pl ? pl : 0}%`};
+    
+    @media screen and (max-width: 768px){
+        width: 90%;
+        padding: 0;
+        margin-top: 15px;
     }
 `;

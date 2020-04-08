@@ -53,7 +53,7 @@ class Header extends Component {
                                             <MenuItem><Link to='/'><span>Home</span></Link></MenuItem>
                                             <MenuItem><Link to='/work'><span>Work</span></Link></MenuItem>
                                             <MenuItem><Link to='/bio'><span>Bio</span></Link></MenuItem>
-                                            <MenuItem><Link to='/hire'><span>Hire me</span></Link></MenuItem>
+                                            <MenuItem><Link to='/hire-me'><span>Hire me</span></Link></MenuItem>
                                             <MenuItem><Link to='/blog'><span>Blog</span></Link></MenuItem>
                                         </MainMenu>
                                     </Menu>
