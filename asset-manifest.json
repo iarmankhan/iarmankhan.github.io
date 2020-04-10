@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8d7eb8cf.chunk.css",
+    "main.js": "/static/js/main.c5202d2e.chunk.js",
+    "main.js.map": "/static/js/main.c5202d2e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2b20a0b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2b20a0b.js.map",
+    "static/js/2.cc3947d5.chunk.js": "/static/js/2.cc3947d5.chunk.js",
+    "static/js/2.cc3947d5.chunk.js.map": "/static/js/2.cc3947d5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.dcfc13f5a0045019a171c5796f9a36a9.js": "/precache-manifest.dcfc13f5a0045019a171c5796f9a36a9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.8d7eb8cf.chunk.css.map": "/static/css/main.8d7eb8cf.chunk.css.map",
+    "static/js/2.cc3947d5.chunk.js.LICENSE.txt": "/static/js/2.cc3947d5.chunk.js.LICENSE.txt",
+    "static/media/bio.jpg": "/static/media/bio.cdb776cd.jpg",
+    "static/media/clover-clothing.png": "/static/media/clover-clothing.24eed9e9.png",
+    "static/media/index.css": "/static/media/home.4ab8e04e.jpg",
+    "static/media/logo.png": "/static/media/logo.d9a26cee.png",
+    "static/media/picsagram.png": "/static/media/picsagram.0a6dd2e6.png",
+    "static/media/portfolio-project.png": "/static/media/portfolio-project.67f58e9a.png",
+    "static/media/qa-forum.png": "/static/media/qa-forum.d7c2385b.png",
+    "static/media/shop-app.png": "/static/media/shop-app.0bfd08b7.png",
+    "static/media/wp-social-connect.png": "/static/media/wp-social-connect.701843ff.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2b20a0b.js",
+    "static/js/2.cc3947d5.chunk.js",
+    "static/css/main.8d7eb8cf.chunk.css",
+    "static/js/main.c5202d2e.chunk.js"
+  ]
+}
