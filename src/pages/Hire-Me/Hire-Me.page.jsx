@@ -1,7 +1,7 @@
 import React from "react";
 import {
     ColumnWrapper,
-    H1, H2, H3,
+    H1, H3,
     Hr, LeftBlock, RightBlock,
     SectionContainer,
     SectionWrapper
@@ -19,7 +19,7 @@ const HireMe = () => {
                     <ColumnWrapper>
                         <H1>Contact me</H1>
                         <Hr/>
-                        <H3>Lorem ipsum dolor emit simit!</H3>
+                        <H3>If you’d like to chat about a project please fill in the form below and I’ll get back within 1-2 days.</H3>
                     </ColumnWrapper>
                 </SectionWrapper>
             </SectionContainer>

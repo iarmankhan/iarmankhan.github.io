@@ -27,12 +27,12 @@ const Home = () => {
                         <H3>
                             I am Arman, an experienced full stack developer based in India. I’m available for freelance
                             work and
-                            projects. I specialise in PHP and it's frameworks as well as JavaScript, HTML and CSS.
+                            projects. I specialise in PHP and it's frameworks as well as React, JavaScript, HTML and CSS.
                         </H3>
                         <Hr/>
-                        <H3>More info and contact here</H3>
+                        <H3>Have a project, idea or problem you'd like to discuss?</H3>
                         <Hr/>
-                        <CustomButton>Say hello!</CustomButton>
+                        <CustomButton onClick={() => history.push('/hire-me')}>Let's chat!</CustomButton>
                     </ColumnWrapper>
                 </SectionWrapper>
             </SectionContainer>

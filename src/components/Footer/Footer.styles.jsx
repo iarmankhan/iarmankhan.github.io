@@ -47,5 +47,30 @@ export const FooterCopy = styled.div`
     
     & .container {
         margin: 20px;
+        
+        .column {
+          display: flex;
+          flex-wrap: wrap;  
+          align-items: center;
+          justify-content: center;
+          
+          @media screen and (min-width: 1240px){
+            justify-content: space-between;
+          }
+          
+          .social {
+              display: flex;
+              margin: 10px;
+              
+              li {
+                 margin: 10px;
+                 
+                 svg{
+                    width: 25px;
+                    fill: white;
+                 }
+              }
+          }
+        }
     }
 `;

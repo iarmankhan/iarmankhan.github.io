@@ -11,8 +11,9 @@ import bio from '../../assets/images/bio.jpg'
 // import overlay from '../../assets/images/overlay.png'
 import miniSeparator from '../../assets/images/separator-mini.png'
 import {BioImageOverlay, BioImageWrapper, BioWrapper} from "./Bio.styles";
+import {Link} from "react-router-dom";
 
-const Bio = () => {
+const Bio = ({history}) => {
     return (
         <div>
             <SectionContainer withPadding pt={160} pb={40}>
@@ -32,10 +33,9 @@ const Bio = () => {
                                 <img src={miniSeparator} alt="Person"/>
                             </div>
                             <Hr/>
-                            <H4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore ma.</H4>
+                            <H4>During the day I’m the lead developer at a local agency. During the evenings I spend my time working on freelance projects and building my own products.</H4>
                             <Hr/>
-                            <H5>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</H5>
+                            <H4>My most recent project is <Link to='/work'>Clover Clothing.</Link> It's an E-commerce app in React with firebase backend.</H4>
                         </RightBlock>
                     </BioWrapper>
                 </SectionWrapper>
@@ -44,18 +44,19 @@ const Bio = () => {
                 <SectionWrapper>
                     <BioWrapper align='flex-start'>
                         <LeftBlock width={30}>
-                            <H2>My Bio</H2>
+                            <H2>Why Work With Me</H2>
                             <div className="image">
                                 <img src={miniSeparator}/>
                             </div>
                         </LeftBlock>
                         <RightBlock width={70} pt={0} pl={5}>
-                            <H4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore ma.</H4>
+                            <H5>There’s nothing I enjoy more than designing and developing good websites for nice people. It really is that simple.</H5>
                             <Hr/>
-                            <H5>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</H5>
+                            <H5>I’ve spent many years trying to perfect what I do and while I’ll never be perfect, I do my best to come close.</H5>
                             <Hr/>
-                            <CustomButton>Hire me</CustomButton>
+                            <H5>If you’ve got a project you’d like to work on with me just <Link to='/hire-me'>get in touch</Link> and we can get to work!</H5>
+                            <Hr/>
+                            <CustomButton onClick={() => history.push('/hire-me')}>Hire me</CustomButton>
                         </RightBlock>
                     </BioWrapper>
                 </SectionWrapper>

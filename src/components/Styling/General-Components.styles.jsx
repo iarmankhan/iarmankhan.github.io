@@ -87,9 +87,21 @@ export const H3 = styled.h3`
 
 export const H4 = styled.h4`
     font-size: 24px;
-    line-height: 28px;
+    line-height: 32px;
     font-weight: 700;
-    letter-spacing: 0px;
+    letter-spacing: 0;
+    
+    a {
+        background: linear-gradient(to bottom, #2991d6 0%, #2991d6 100%) repeat-x 0 100%;
+        background-size: 4px 4px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-size .2s;
+    }
+
+    a:hover {
+      background-size: 4px 50px;
+    }
     
     @media only screen and (max-width: 479px){
         font-size: 14px;
@@ -103,6 +115,18 @@ export const H5 = styled.h5`
     line-height: 22px;
     font-weight: 400;
     letter-spacing: 0;
+    
+    a {
+        background: linear-gradient(to bottom, #2991d6 0%, #2991d6 100%) repeat-x 0 100%;
+        background-size: 4px 4px;
+        color: #fff;
+        text-decoration: none;
+        transition: background-size .2s;
+    }
+
+    a:hover {
+      background-size: 4px 50px;
+    }
     
     @media only screen and (max-width: 479px){
         font-size: 13px;
