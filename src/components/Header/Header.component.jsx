@@ -16,13 +16,9 @@ import LogoImg from '../../assets/images/logo.png';
 
 class Header extends Component {
 
-    constructor() {
-        super();
-
-        this.state = {
-            isOpen: false
-        }
-    }
+    state = {
+        isOpen: false
+    };
 
     componentWillMount() {
         this.unlisten = this.props.history.listen((location, action) => {
@@ -55,6 +51,7 @@ class Header extends Component {
                                             <MenuItem><Link to='/bio'><span>Bio</span></Link></MenuItem>
                                             <MenuItem><Link to='/hire-me'><span>Hire me</span></Link></MenuItem>
                                             <MenuItem><Link to='/blog'><span>Blog</span></Link></MenuItem>
+                                            <MenuItem><Link to='/tree'><span>Tree</span></Link></MenuItem>
                                         </MainMenu>
                                     </Menu>
                                     <Toggle onClick={() => this.setState({isOpen: !isOpen})}>

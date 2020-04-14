@@ -12,6 +12,7 @@ import Bio from "./pages/Bio/Bio.page";
 import HireMe from "./pages/Hire-Me/Hire-Me.page";
 import Blog from "./pages/Blog/Blog.page";
 import ScrollToTop from "./components/Styling/ScrollToTop.component";
+import LinkTree from "./pages/Link Tree/LinkTree.page";
 
 class App extends Component {
     render() {
@@ -28,6 +29,7 @@ class App extends Component {
                                 <Route exact path='/bio' component={Bio}/>
                                 <Route exact path='/hire-me' component={HireMe}/>
                                 <Route exact path='/blog' component={Blog}/>
+                                <Route exact path='/tree' component={LinkTree}/>
                             </Switch>
                             <Footer/>
                         </SectionsGroup>
