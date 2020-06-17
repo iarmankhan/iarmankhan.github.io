@@ -18,17 +18,23 @@ const LinkTree = () => {
                         </LinkTreeLeftBlock>
                         <RightBlock width={60}>
                             <LinkTreeUL>
-                                <LinkTreeLI><a
-                                    href="https://www.instagram.com/codingwitharman/">Instagram</a></LinkTreeLI>
-                                <LinkTreeLI><a href="https://github.com/iarmankhan">Github</a></LinkTreeLI>
-                                <LinkTreeLI><a href="https://codepen.io/iarman">Codepen</a></LinkTreeLI>
-                                <LinkTreeLI><a
-                                    href="https://drive.google.com/open?id=1xUwXUqFqshs3da1ppzOfecJM55AEhBxH">Wallpapers</a></LinkTreeLI>
-                                <LinkTreeLI><a href="https://www.instagram.com/iarman.khan/">Instagram -
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://www.instagram.com/codingwitharman/">Instagram</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://www.youtube.com/channel/UCiL068GHdnKJOrTHunrHjgg">Youtube</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://github.com/iarmankhan">Github</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://codepen.io/iarman">Codepen</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://drive.google.com/open?id=1xUwXUqFqshs3da1ppzOfecJM55AEhBxH">Wallpapers</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://www.instagram.com/iarman.khan/">Instagram -
                                     Personal</a></LinkTreeLI>
-                                <LinkTreeLI><a href="https://www.linkedin.com/in/iarmankhan/">LinkedIn</a></LinkTreeLI>
-                                <LinkTreeLI><a
-                                    href="https://www.facebook.com/codingwitharman/">Facebook</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://www.linkedin.com/in/iarmankhan/">LinkedIn</a></LinkTreeLI>
+                                <LinkTreeLI><a rel="noopener noreferrer" target='_blank'
+                                               href="https://www.facebook.com/codingwitharman/">Facebook</a></LinkTreeLI>
                             </LinkTreeUL>
                         </RightBlock>
                     </LinkTreeWrapper>
